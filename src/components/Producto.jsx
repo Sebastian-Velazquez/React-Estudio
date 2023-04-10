@@ -1,15 +1,13 @@
 /* rfce : Nos plantea toda las estructura que necesitamos*/
 import React from 'react'
-import ListadoProducos from './ListadoProductos'
+//import Producto from './Producto'
 
-function Body() {
+function Producto() {
   return (
     <React.StrictMode>
-    <div>
-      <ListadoProducos/>
-    </div>
+      <div>Producto Individual!!</div>
     </React.StrictMode>
   )
 }
 
-export default Body
+export default Producto
