@@ -5,7 +5,7 @@ class ConsumirApis extends Component {
     constructor(props){
         super(props);
         this.state = {
-            apiUsario: ""
+            apiUsario: []
         }
     }
 
@@ -22,10 +22,13 @@ class ConsumirApis extends Component {
     }
 
     mostrarUsuario = (data) =>{
-        //console.log(data)
+        console.log(data)
         this.setState(
             {
-                apiUsario: data.data
+                apiUsario: data.data.map( imprimir => imprimir = <p>{imprimir.first_name}</p> 
+                    /* console.log(imprimir.first_name + " Hola") */
+                    )
+                
             }
         )
     }
@@ -45,7 +48,7 @@ class ConsumirApis extends Component {
         }
     return (
         <div>
-           {contenido}
+            {contenido}
         </div>
         )
     }
