@@ -1,3 +1,4 @@
+/* Children es para cuando uno nosabeque poner y maso menos tiene unaestructura armada, el con tenido se pone en el padre */
 import React from 'react'
 import "./PropsChildren.css"
 
