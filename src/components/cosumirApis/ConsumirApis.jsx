@@ -25,7 +25,7 @@ class ConsumirApis extends Component {
         console.log(data)
         this.setState(
             {
-                apiUsario: data.data.map( imprimir => imprimir = <p>{imprimir.first_name}</p> 
+                apiUsario: data.data.map( (imprimir, i) => imprimir = <p key={imprimir.first_name + i}>{imprimir.first_name}</p> 
                     /* console.log(imprimir.first_name + " Hola") */
                     )
                 
@@ -44,7 +44,7 @@ class ConsumirApis extends Component {
         if(this.state.apiUsario == ""){
             contenido = <p>Cargando...</p>
         }else{
-            contenido = <p>{this.state.apiUsario}</p>
+            contenido = this.state.apiUsario
         }
     return (
         <div>
