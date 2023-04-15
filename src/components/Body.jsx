@@ -7,7 +7,8 @@ import PropsChildren from './Props/PropsChildren/PropsChildren';
 import Stateful from './stateful/Stateful';
 import Eventos from './eventos/Eventos';
 import CicloDeVida from './cicloDeVida/CicloDeVida';
-import ConsumirApis from './cosumirApis/ConsumirApis';
+import ConsumirApis from './cosumirApis/ConsumirApisUsers';
+import ConsumirApisProducts from './cosumirApis/ConsumirApisProducts';
 
 function Body() {
   return (
@@ -26,7 +27,10 @@ function Body() {
       {/* Fin Props */}
         {/* <Eventos/>
         <CicloDeVida inicial ={0}/> */}
+        <h2>Nombres de Usuarios</h2>
         <ConsumirApis/>
+        <h2>Nombres de Productos</h2>
+        <ConsumirApisProducts/>
     </React.StrictMode>
   )
 }

@@ -19,7 +19,6 @@ function Props(props) {
         <h2 className='sarasa'>{props.titulo}</h2>
         <p>Rating: {props.rating}</p>
         {listadoDeGenero}
-
     </div>
   )
 }
