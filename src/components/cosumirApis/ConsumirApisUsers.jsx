@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class ConsumirApis extends Component {
+class ConsumirApisUsers extends Component {
 
     constructor(props){
         super(props);
@@ -25,7 +25,13 @@ class ConsumirApis extends Component {
         console.log(data)
         this.setState(
             {
-                apiUsario: data.data.map( (imprimir, i) => imprimir = <p key={imprimir.first_name + i}>{imprimir.first_name}</p> 
+                apiUsario: data.data.map( (imprimir, i) => imprimir = 
+
+                <p key={imprimir.first_name + i}>Nombre: {imprimir.first_name}<br></br>
+                    Apellido: {imprimir.last_name}<br></br>
+                    {imprimir.email}
+                    <img src={imprimir.image}></img>
+                </p>
                     /* console.log(imprimir.first_name + " Hola") */
                     )
                 
@@ -55,4 +61,4 @@ class ConsumirApis extends Component {
 
 }
 
-export default ConsumirApis
+export default ConsumirApisUsers
