@@ -4,7 +4,7 @@ import  PropTypes  from 'react';
 
 
 function Props(props) {
-    /* let genero=["Accion", "Drama"] */
+    /* let genero=["Accion", "Drama"] asdasdas*/
     let  listadoDeGenero;
   if (props.generos != null){
     listadoDeGenero =
